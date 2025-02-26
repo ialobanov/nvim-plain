@@ -32,10 +32,18 @@ vim.opt.tabstop = 2
 vim.opt.path:append({ '**' }) -- Finding files - Search down into subfolders
 vim.opt.showmode = false
 vim.opt.wrap = false
+vim.opt.signcolumn = 'yes'
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_node_provider = 0
+-- Sets how neovim will display certain whitespace characters in the editor.
+--  See `:help 'list'`
+--  and `:help 'listchars'`
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- Preview substitutions live, as you type!
+vim.opt.inccommand = 'split'
 
 -- Set leader key
 vim.g.mapleader = ' '
