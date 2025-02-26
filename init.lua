@@ -1,5 +1,5 @@
 vim.opt.clipboard = 'unnamedplus'
-vim.cmd("colorscheme retrobox")
+-- vim.cmd('colorscheme sorbet')
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.hlsearch = false
@@ -23,7 +23,7 @@ vim.opt.expandtab = true
 vim.opt.smarttab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
-vim.opt.path:append({ "**" }) -- Finding files - Search down into subfolders
+vim.opt.path:append({ '**' }) -- Finding files - Search down into subfolders
 vim.opt.showmode = false
 vim.opt.wrap = false
 vim.g.loaded_python3_provider = 0
@@ -52,11 +52,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
-require('lazy').setup({
-  opts = {
-    rocks = { enabled = false }
-  },
+
+-- Setup lazy.nvim
+require("lazy").setup({
   spec = {
+    -- import your plugins
     { import = "plugins" },
   },
 })

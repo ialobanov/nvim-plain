@@ -20,19 +20,29 @@ return {
   {
     'numToStr/Comment.nvim',
     opts = {
-        -- add any options here
-        padding = true,
-        ---Whether the cursor should stay at its position
-        sticky = true,
-        ---Lines to be ignored while (un)comment
-        ignore = nil,
-        ---LHS of toggle mappings in NORMAL mode
-        toggler = {
-            ---Line-comment toggle keymap
-            line = 'gcc',
-            ---Block-comment toggle keymap
-            block = 'gbc',
-        },
+      -- add any options here
+      padding = true,
+      ---Whether the cursor should stay at its position
+      sticky = true,
+      ---Lines to be ignored while (un)comment
+      ignore = nil,
+      ---LHS of toggle mappings in NORMAL mode
+      toggler = {
+        ---Line-comment toggle keymap
+        line = 'gcc',
+        ---Block-comment toggle keymap
+        block = 'gbc',
+      },
     }
+  },
+  {
+    'craftzdog/solarized-osaka.nvim',
+    -- lazy = true,
+    priority = 1000,
+    opts = function()
+      return {
+        vim.cmd([[colorscheme solarized-osaka]]),
+      }
+    end,
   },
 }
