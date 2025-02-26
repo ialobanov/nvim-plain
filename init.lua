@@ -1,4 +1,6 @@
-vim.opt.clipboard = 'unnamedplus'
+vim.schedule(function()
+  vim.opt.clipboard = 'unnamedplus'
+end)
 -- vim.cmd('colorscheme retrobox')
 vim.opt.number = true
 vim.opt.relativenumber = true
