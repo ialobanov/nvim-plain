@@ -21,6 +21,7 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 vim.keymap.set("n", "te", ":tabedit<CR>", opts)
 vim.keymap.set("n", "<tab>", ":tabnext<CR>", opts)
 vim.keymap.set("n", "<s-tab>", ":tabprev<CR>", opts)
+vim.keymap.set("n", "tq", ":q<CR>", opts)
 
 -- Delete a word backwards
 vim.keymap.set("n", "dw", 'vb"_d')
