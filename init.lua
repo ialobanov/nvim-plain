@@ -1,5 +1,5 @@
 vim.opt.clipboard = 'unnamedplus'
--- vim.cmd('colorscheme sorbet')
+-- vim.cmd('colorscheme retrobox')
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.hlsearch = false
