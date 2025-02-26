@@ -1,4 +1,4 @@
-vim.opt.clipboard = 'unnamed'
+vim.opt.clipboard = 'unnamedplus'
 vim.cmd("colorscheme retrobox")
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -26,6 +26,10 @@ vim.opt.tabstop = 2
 vim.opt.path:append({ "**" }) -- Finding files - Search down into subfolders
 vim.opt.showmode = false
 vim.opt.wrap = false
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_node_provider = 0
 
 -- Set leader key
 vim.g.mapleader = ' '

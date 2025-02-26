@@ -11,28 +11,28 @@ return {
     opts = {},
   },
   {
-    "folke/which-key.nvim",
-    event = "VeryLazy",
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
-    keys = {
-      {
-        "<leader>?",
-        function()
-          require("which-key").show({ global = false })
-        end,
-        desc = "Buffer Local Keymaps (which-key)",
-      },
-    },
-  },
-  {
     -- high-performance color highlighter
     'norcalli/nvim-colorizer.lua',
     config = function()
       require('colorizer').setup()
     end,
+  },
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+        -- add any options here
+        padding = true,
+        ---Whether the cursor should stay at its position
+        sticky = true,
+        ---Lines to be ignored while (un)comment
+        ignore = nil,
+        ---LHS of toggle mappings in NORMAL mode
+        toggler = {
+            ---Line-comment toggle keymap
+            line = 'gcc',
+            ---Block-comment toggle keymap
+            block = 'gbc',
+        },
+    }
   },
 }
