@@ -26,7 +26,7 @@ vim.opt.tabstop = 2
 vim.opt.path:append({ '**' }) -- Finding files - Search down into subfolders
 vim.opt.showmode = false
 vim.opt.wrap = false
-vim.opt.signcolumn = 'yes'
+-- vim.opt.signcolumn = 'yes'
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
