@@ -36,13 +36,13 @@ return {
     }
   },
   {
-    'craftzdog/solarized-osaka.nvim',
-    -- lazy = true,
-    priority = 1000,
-    opts = function()
-      return {
-        vim.cmd([[colorscheme solarized-osaka]]),
-      }
-    end,
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = function ()
+    return {
+      vim.cmd[[colorscheme tokyonight-storm]]
+    }
+  end,
   },
 }
