@@ -1,4 +1,3 @@
-vim.opt.clipboard = 'unnamedplus'
 -- vim.cmd('colorscheme retrobox')
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -38,6 +37,7 @@ vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
+-- vim.opt.clipboard = 'unnamedplus'
 
 -- Set leader key
 vim.g.mapleader = ' '
@@ -69,3 +69,5 @@ require("lazy").setup({
   },
   install = { colorscheme = { "tokyonight", "habamax" } },
 })
+vim.opt.clipboard = 'unnamedplus'
+
