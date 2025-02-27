@@ -67,7 +67,6 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins" },
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
 })
 vim.opt.clipboard = 'unnamedplus'
 
