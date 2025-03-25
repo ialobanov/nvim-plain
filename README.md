@@ -14,5 +14,5 @@ if (!(Test-Path "$env:USERPROFILE\AppData\Local\nvim")) { New-Item -Path "$env:U
 Clone repo:
 
 ```powershell
-git clone git@github.com:ialobanov/nvim-plain.git $env:USERPROFILE\AppData\Local\nvim
+git clone https://github.com/ialobanov/nvim-plain.git $env:USERPROFILE\AppData\Local\nvim
 ```
