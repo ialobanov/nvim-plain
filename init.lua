@@ -1,8 +1,9 @@
--- vim.cmd('colorscheme retrobox')
+vim.cmd('colorscheme retrobox')
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.hlsearch = false
-vim.opt.mouse = ''
+vim.opt.mouse = 'a'
+vim.opt.mousemodel= 'extend'
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.breakindent = true
@@ -22,7 +23,7 @@ vim.opt.expandtab = true
 vim.opt.smarttab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
-vim.opt.path:append({ '**' }) -- Finding files - Search down into subfolders
+vim.opt.path:append({ '**' }) -- finding files - search down into subfolders
 vim.opt.showmode = false
 vim.opt.wrap = false
 vim.opt.signcolumn = 'yes'
@@ -31,16 +32,16 @@ vim.g.loaded_python3_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_node_provider = 0
--- Sets how neovim will display certain whitespace characters in the editor.
---  See `:help 'list'`
+-- sets how neovim will display certain whitespace characters in the editor.
+--  see `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
--- Preview substitutions live, as you type!
+-- preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 -- vim.opt.clipboard = 'unnamedplus'
 
--- Set leader key
+-- set leader key
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 require 'keymaps'
@@ -52,9 +53,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
   if vim.v.shell_error ~= 0 then
     vim.api.nvim_echo({
-      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-      { out, "WarningMsg" },
-      { "\nPress any key to exit..." },
+      { "failed to clone lazy.nvim:\n", "errormsg" },
+      { out, "warningmsg" },
+      { "\npress any key to exit..." },
     }, true, {})
     vim.fn.getchar()
     os.exit(1)
@@ -63,7 +64,7 @@ end
 ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
--- Setup lazy.nvim
+-- setup lazy.nvim
 require("lazy").setup({
   spec = {
     -- import your plugins
