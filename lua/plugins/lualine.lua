@@ -3,7 +3,7 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = {
       'nvim-tree/nvim-web-devicons',
-      { 'echasnovski/mini.nvim', version = '*' },
+      --{ 'echasnovski/mini.nvim', version = false },
     },
     opts = function()
       return {
