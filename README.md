@@ -5,6 +5,8 @@ Plugins install by LazyVim manager.
 
 ## Installation
 
+#### Windows
+
 Create a directory if it doesn't exist:
 
 ```powershell
@@ -15,4 +17,14 @@ Clone repo:
 
 ```powershell
 git clone https://github.com/ialobanov/nvim-plain.git $env:USERPROFILE\AppData\Local\nvim
+```
+
+#### UNIX
+
+```shell
+mkdir -p $HOME/.config/nvim
+```
+
+```shell
+git clone https://github.com/ialobanov/nvim-plain.git $HOME/.config/nvim
 ```
