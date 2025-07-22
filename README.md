@@ -22,9 +22,5 @@ git clone https://github.com/ialobanov/nvim-plain.git $env:USERPROFILE\AppData\L
 #### UNIX
 
 ```shell
-mkdir -p $HOME/.config/nvim
-```
-
-```shell
-git clone https://github.com/ialobanov/nvim-plain.git $HOME/.config/nvim
+mkdir -p $HOME/.config/nvim && git clone https://github.com/ialobanov/nvim-plain.git $HOME/.config/nvim
 ```
