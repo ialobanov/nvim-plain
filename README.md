@@ -1,6 +1,6 @@
 # Plain Neovim Setup
 
-It's the minimalistic Neovim setup with LazyVim manager.
+It's the minimalistic Neovim setup with Lazyvim manager.
 
 ## Screenshot
 
