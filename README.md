@@ -1,7 +1,11 @@
 # Plain Neovim Setup
 
-It's Neovim setup fo my Windows machine.
-Plugins install by LazyVim manager.
+It's the minimalistic Neovim setup with LazyVim manager.
+
+## Screnshot
+
+<img width="3763" height="1939" alt="image" src="https://github.com/user-attachments/assets/24e582f0-7c87-4aaa-a836-85322584978d" />
+
 
 ## Installation
 
