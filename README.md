@@ -2,7 +2,7 @@
 
 It's the minimalistic Neovim setup with LazyVim manager.
 
-## Screnshot
+## Screenshot
 
 <img width="3763" height="1939" alt="image" src="https://github.com/user-attachments/assets/24e582f0-7c87-4aaa-a836-85322584978d" />
 
