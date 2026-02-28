@@ -3,7 +3,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.hlsearch = false
 vim.opt.mouse = 'a'
-vim.opt.mousemodel= 'extend'
+vim.opt.mousemodel = 'extend'
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.breakindent = true
@@ -24,7 +24,6 @@ vim.opt.smarttab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.path:append({ '**' }) -- finding files - search down into subfolders
-vim.opt.showmode = false
 vim.opt.wrap = false
 vim.opt.signcolumn = 'yes'
 vim.opt.selection = 'exclusive'
@@ -39,8 +38,6 @@ vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 -- preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
--- vim.opt.clipboard = 'unnamedplus'
-
 -- set leader key
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -48,20 +45,15 @@ require 'keymaps'
 require 'autocmds'
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
+if not vim.uv.fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
   local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
   if vim.v.shell_error ~= 0 then
-    vim.api.nvim_echo({
-      { "failed to clone lazy.nvim:\n", "errormsg" },
-      { out, "warningmsg" },
-      { "\npress any key to exit..." },
-    }, true, {})
+    vim.notify("Failed to clone lazy.nvim:\n" .. out, vim.log.levels.ERROR)
     vim.fn.getchar()
     os.exit(1)
   end
 end
----@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 -- setup lazy.nvim
@@ -72,4 +64,3 @@ require("lazy").setup({
   },
 })
 vim.opt.clipboard = 'unnamedplus'
-
