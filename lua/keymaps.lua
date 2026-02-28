@@ -10,9 +10,9 @@ vim.keymap.set('n', '<Esc>', ':noh<CR>', opts)
 -- save file
 vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
 
--- delete single character without copying into register
+-- delete character and strings without copying into register
 vim.keymap.set('n', 'x', '"_x', opts)
-
+vim.keymap.set('n', 'dd', '"_dd', opts)
 -- Find and center
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
