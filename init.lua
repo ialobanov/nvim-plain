@@ -1,4 +1,3 @@
-vim.cmd('colorscheme retrobox')
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.hlsearch = false
@@ -27,6 +26,7 @@ vim.opt.path:append({ '**' }) -- finding files - search down into subfolders
 vim.opt.wrap = false
 vim.opt.signcolumn = 'yes'
 vim.opt.selection = 'exclusive'
+vim.opt.clipboard = 'unnamedplus'
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
@@ -63,4 +63,3 @@ require("lazy").setup({
     { import = "plugins" },
   },
 })
-vim.opt.clipboard = 'unnamedplus'
