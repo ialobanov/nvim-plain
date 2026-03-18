@@ -1,7 +1,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.hlsearch = false
-vim.opt.mouse = 'a'
+vim.opt.mouse = ''
 vim.opt.mousemodel = 'extend'
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
