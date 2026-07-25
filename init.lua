@@ -1,3 +1,7 @@
+-- set leader key
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+vim.opt.signcolumn = 'yes'
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.hlsearch = false
@@ -38,9 +42,7 @@ vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 -- preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
--- set leader key
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+
 require 'keymaps'
 require 'autocmds'
 
