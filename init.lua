@@ -2,6 +2,10 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.opt.signcolumn = 'yes'
+vim.opt.foldenable = false
+vim.opt.foldmethod = 'manual'
+vim.opt.foldlevelstart = 99
+vim.opt.colorcolumn = '80'
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.hlsearch = false
@@ -28,7 +32,6 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.path:append({ '**' }) -- finding files - search down into subfolders
 vim.opt.wrap = false
-vim.opt.signcolumn = 'yes'
 vim.opt.selection = 'exclusive'
 vim.opt.clipboard = 'unnamedplus'
 vim.g.loaded_python3_provider = 0
@@ -39,7 +42,7 @@ vim.g.loaded_node_provider = 0
 --  see `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = 'tab:^ ,nbsp:¬,extends:»,precedes:«,trail:•'
 -- preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
