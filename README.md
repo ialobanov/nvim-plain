@@ -4,8 +4,7 @@ It's the minimalistic Neovim setup with Lazyvim manager.
 
 ## Screenshot
 
-<img width="3763" height="1939" alt="image" src="https://github.com/user-attachments/assets/24e582f0-7c87-4aaa-a836-85322584978d" />
-
+<img width="1882" height="900" alt="image" src="https://github.com/user-attachments/assets/fa03aab9-3a8e-44c2-b4f5-c014df9683ac" />
 
 ## Installation
 
