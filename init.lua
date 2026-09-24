@@ -45,6 +45,7 @@ vim.opt.list = true
 vim.opt.listchars = 'tab:^ ,nbsp:¬,extends:»,precedes:«,trail:•'
 -- preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
+vim.g.netrw_banner = 0
 
 require 'keymaps'
 require 'autocmds'
